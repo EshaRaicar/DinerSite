@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheDiner</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar  -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/images/Logo.jpg" alt="logo" class="w-25" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#popular">PopularItems</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#questions">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn text-white bg-dark px-3"
+                href="contact.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Image Slider  -->
+
+    <div id="carouselExampleAutoplaying" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src=images/img2.jpg alt="firstImg" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/img1.jpg" alt="secondImg" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Popular Dishes Section -->
+
+    <section class="bg-dark text-light mb-7" id="popular">
+      <div class="container d-flex">
+        <h2 class="popular-heading pt-5">Our Popular Menu Items</h2>
+        <h6 class="ms-auto">
+          Explore All <span class="arrow-icon">&rarr;</span>
+        </h6>
+      </div>
+
+      <div
+        class="container mx-auto row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pb-1 mt-1 mt-1"
+      >
+        <div class="col">
+          <div class="card border-0 rounded-0 bg-transparent">
+            <img src="images/item1.jpg" class="rounded-5" alt="dish1" />
+            <div class="card-body">
+              <p class="card-text text-white">BurgerBlast Combo</p>
+              <div class="d-flex">
+                <button class="btn btn-lg text-white bg-secondary">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card border-0 rounded-0 bg-transparent">
+            <img src="images/item2.jpg" class="rounded-5" alt="dish1" />
+            <div class="card-body">
+              <p class="card-text text-white">Vanilla Shakes</p>
+              <div class="d-flex">
+                <button class="btn btn-lg text-white bg-secondary">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card border-0 rounded-0 bg-transparent">
+            <img src="images/item3.jpg" class="rounded-5" alt="dish1" />
+            <div class="card-body">
+              <p class="card-text text-white">Fruitie Waffles</p>
+              <div class="d-flex">
+                <button class="btn btn-lg text-white bg-secondary">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services offered - home delivery  -->
+
+    <section
+      class="services section-padding"
+      style="margin-top: 10px"
+      id="services"
+    >
+      <div class="text-center pb-5">
+        <h2>Services Offered</h2>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12 col-12">
+            <div class="d-flex">
+              <div class="services-img mx-2">
+                <img
+                  src="images/delivery1.jpg"
+                  alt="homeDelivery"
+                  class="img-fluid h-100 mt-4"
+                />
+              </div>
+              <div class="services-img mx-2">
+                <img
+                  src="images/delivery2.jpg"
+                  alt="homeDelivery"
+                  class="img-fluid h-75"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-7 col-md-12 col-12 ps-lg-5 mt-md-5"
+            style="margin-top: 40px"
+          >
+            <div class="about-text">
+              <h2>We Deliver At Your Doorstep!</h2>
+              <p>
+                Experience the convenience of our doorstep delivery service.
+                Enjoy the flavors from the comfort of your home. Our dedicated
+                delivery team ensures that your favorite dishes are brought
+                right to your doorstep, offering a hassle-free and delicious
+                dining experience. Order now and savor the culinary delights
+                without leaving your home.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews  -->
+
+    <section class="bg-dark" style="margin-top: 100px" id="reviews">
+      <div class="container pt-5">
+        <div class="d-flex" style="margin-top: 20px">
+          <h2 class="text-light">Our Customer Reviews</h2>
+
+          <div class="ms-auto">
+            <button class="btn btn-md text-light">
+              <span class="arrow-icon mx-2">&larr;</span>
+            </button>
+            <button class="btn btn-md text-light">
+              <span class="arrow-icon mx-2">&rarr;</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container mx-auto row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pb-5 mt-3"
+      >
+        <div class="card border-0 rounded-4 bg-transparent col-md-8">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img src="images/review1.jpg" class="img-fluid" alt="review1" />
+            </div>
+
+            <div class="col-md-7">
+              <div class="card-body">
+                <p class="card-text">
+                  "The flavors in every dish were outstanding, and the
+                  presentation was top-notch."
+                </p>
+                <p class="card-text">
+                  <small class="text-light">Isabella Taylor</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card border-0 rounded-4 bg-transparent">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img src="images/review2.jpg" class="img-fluid" alt="review2" />
+            </div>
+
+            <div class="col-md-7">
+              <div class="card-body">
+                <p class="card-text">
+                  "A hidden gem! Surpassed my expectations with its diverse menu
+                  and exceptional service."
+                </p>
+                <p class="card-text">
+                  <small class="text-light">John Smith</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card border-0 rounded-4 bg-transparent">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img src="images/review3.jpg" class="img-fluid" alt="review3" />
+            </div>
+
+            <div class="col-md-7">
+              <div class="card-body">
+                <p class="card-text">
+                  "The staff was incredibly friendly and attentive. Can't wait
+                  to return for another culinary adventure."
+                </p>
+                <p class="card-text">
+                  <small class="text-light">Michael Anderson</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Section -->
+
+    <section
+      class="question section-padding"
+      style="margin-top: 10px"
+      id="questions"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12 col-12 mt-md-3">
+            <div class="questions-text">
+              <h2>Frequently Asked Questions</h2>
+              <p>
+                Explore common queries and discover helpful insights in our
+                Frequently Asked Questions. Whether you're curious about our
+                menu, reservation policies, or special offerings, we've compiled
+                the answers to make your experience with us seamless. If you
+                have additional questions, feel free to reach out, and we'll be
+                delighted to assist you!
+              </p>
+            </div>
+          </div>
+
+          <!-- Accordion -->
+
+          <div class="accordion col-lg-7 mt-3" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  What are your regular business hours?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Our regular business hours are Monday to Friday from 11:00 AM
+                  to 9:00 PM and on weekends from 12:00 PM to 8:00 PM. Please
+                  note that these hours are subject to change during holidays or
+                  special occasions. Feel free to contact us for any specific
+                  inquiries or to make reservations. We look forward to serving
+                  you!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Is the menu seasonal, and do offerings change?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Yes, our menu is crafted to reflect the seasons, and offerings
+                  may change to showcase the freshest and finest ingredients
+                  available. Our chefs take pride in creating diverse and
+                  innovative dishes to provide you with a delightful dining
+                  experience. Check back regularly for updates or feel free to
+                  ask our staff about any seasonal specials during your visit.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Are catering services available?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Yes, we offer catering services to make your events extra
+                  special. Our catering packages are customizable to suit your
+                  preferences, whether it's a corporate gathering, wedding, or
+                  any other celebration. Contact our catering team for more
+                  details.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="bg-dark bg-footer" style="margin-top: 80px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h5 class="text-light">About Us</h5>
+            <p class="text-light">
+              Welcome to <strong>TheDiner</strong>, where culinary excellence
+              meets local charm. Established in 1980, our restaurant in Richmond
+              is a fusion of flavors, crafted with care from the finest local
+              ingredients. Join us for an unforgettable dining experience,
+              blending creative dishes with warm hospitality.
+            </p>
+            <p class="text-light">
+              <i class="fa fa-location"></i>77th Street Richmond
+            </p>
+            <p class="text-light"><i class="fas fa-phone"></i>+920 8231 7770</p>
+            <p class="text-light">
+              <i class="fa fa-envelope"></i>diner@mail.com
+            </p>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="text-light links">Explore</h5>
+            <ul class="list-unstyled">
+              <li><a href="#"> Home </a></li>
+              <li><a href="#popular"> Popular </a></li>
+              <li><a href="#services"> Services </a></li>
+              <li><a href="#reviews"> Reviews </a></li>
+              <li><a href="#questions"> Questions </a></li>
+              <li><a href="contact.html"> Contact Us </a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="text-light links">Connect With Us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+              </li>
+
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="text-center text-white">
+              Copyright &copy; 2024 TheDiner. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
