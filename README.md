@@ -3,4 +3,4 @@
 - The website has a responsive design which ensures optimal viewing and functionality whether you're on a laptop, tablet, or mobile device. 
 - You can view all images of the site under the "Demo Images" folder.
 - Ex. The  website in a tablet view : 
-![medTabletSize](https://github.com/EshaRaicar/DinerSite/assets/107826151/073db205-1300-4d19-82da-2f659e4af41f)
+![tablet](https://github.com/EshaRaicar/DinerSite/assets/107826151/17f07143-f1e5-490d-9e29-5a7d54d30f88)
